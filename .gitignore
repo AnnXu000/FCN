@@ -138,9 +138,9 @@ dmypy.json
 cython_debug/
 
 #datasets
-data
+data/
 
 #model weights files
-models
+models/
 
 

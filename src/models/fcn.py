@@ -17,7 +17,7 @@ def fcn(image_size=(224, 224), upsampling_factor=8, num_classes=21, backbone_wei
     #load pretrained imagenet weights if weight file is given
     backbone = VGG16(img_height=image_size[0], img_width=image_size[1], weights_path=backbone_weights_path)
     
-    #extract pool3, pool4, pool5 output tensors from backback network
+    #extract pool3, pool4, pool5 output tensors from backbone network
     pool3 = backbone.get_layer(name='block3_pool').output
     pool4 = backbone.get_layer(name='block4_pool').output
     pool5 = backbone.get_layer(name='block5_pool').output
